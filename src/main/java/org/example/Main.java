@@ -1,6 +1,8 @@
 package org.example;
 
 
+import java.util.Scanner;
+
 class laptop {
     public double mem;
     public double hdd;
@@ -18,7 +20,22 @@ class laptop {
     }
 
     public void addLaptop() {
-        System.out.println("Screen: " + screen + '"');
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("Добавим новый товар. ");
+        System.out.printf("Введте бренд: ");
+        String brand = iScanner.nextLine();
+        System.out.println("Введите наименование процессора: ");
+        String cpu = iScanner.nextLine();
+        System.out.println("Введите частоту процессора: ");
+        String cpuspeed = iScanner.nextLine();
+        System.out.println("Введите объём оперативной памяти: ");
+        String memory = iScanner.nextLine();
+        System.out.println("Введите объем HDD: ");
+        String hdd = iScanner.nextLine();
+        System.out.println("Введите размер экрана: ");
+        String screen = iScanner.nextLine();
+        iScanner.close();
+
     }
 }
 public class Main {
