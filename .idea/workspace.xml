@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6510f6b0-a8ad-43c9-b960-2cf3ac0ff87b" name="Changes" comment="Организовал структуру, задействовал конструктор.">
+    <list default="true" id="6510f6b0-a8ad-43c9-b960-2cf3ac0ff87b" name="Changes" comment="Всё сначала...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
@@ -89,13 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677484905193</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Всё сначала...">
+      <created>1677520096123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677520096123</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Начал работу с методами - сделал первый метод printLaptop." />
     <MESSAGE value="Организовал структуру, задействовал конструктор." />
-    <option name="LAST_COMMIT_MESSAGE" value="Организовал структуру, задействовал конструктор." />
+    <MESSAGE value="Всё сначала..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Всё сначала..." />
   </component>
 </project>

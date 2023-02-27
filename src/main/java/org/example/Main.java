@@ -6,12 +6,47 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-    Laptop lp1 = new Laptop();
-    lp1.printLP();
-    lp1.sn = 001;
-    lp1.brand = "Asus";
-    lp1.price = 1200.0;
-    lp1.printLP();
+//    Laptop lp1 = new Laptop();
+//    lp1.printLP();
+//    lp1.sn = 001;
+//    lp1.brand = "Asus";
+//    lp1.price = 1200.0;
+//    lp1.printLP();
+
+        HashSet<Laptop> laptopHashSet = new HashSet<Laptop>();
+
+        Scanner iScanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("Команды:");
+            System.out.println("1 - Добавить ноутбук; \n 2 - Просмотреть все \n 3 - отфильтровать по параметру \n 4 - отсортировать  \n Q - выйти");
+            String str = iScanner.nextLine();
+            if (str.equals("Q")) {
+                iScanner.close();
+                break;
+            }
+            else if (str.equals("1")) {
+                Laptop lt1 = new Laptop(); //Создаём пустой экземпляр
+//                Comparator<Laptop> priceComp = new LTPriceComparator();
+//                TreeSet<Laptop> laptopForPrice = new TreeSet(priceComp);
+                lt1.addLaptop(); //Заполняем созданный экземпляр значениями с помощью метода addLaptop()
+                laptopHashSet.add(lt1); // Закидываем текущий экземпляр в HashSet
+            }
+
+            else if (str.equals("2")) {
+//                Laptop lt1 = new Laptop(); //Создаём пустой экземпляр
+                Comparator<Laptop> priceComp = new PriceComparator();
+                TreeSet<Laptop> laptopForPrice = new TreeSet(priceComp);
+                for (Laptop lt:laptopHashSet) laptopForPrice.add(lt); // Перекидываем все экземпляры из HashSet в TreeSet
+                for (Laptop lt:laptopForPrice) lt.printlLaptop(); // Выводим TreeSet
+            }
+            else if (str.equals("3")) {
+                Comparator<Laptop> hddComp = new HDDComparator();
+                TreeSet<Laptop> laptopForHDD = new TreeSet(hddComp);
+                for (Laptop lt:laptopHashSet) laptopForHDD.add(lt);
+                for (Laptop lt:laptopForHDD) lt.printlLaptop();
+            }
+
+        }
     }
 }
 //        Scanner iScanner = new Scanner(System.in);
