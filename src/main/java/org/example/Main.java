@@ -18,7 +18,7 @@ public class Main {
                 break;
             } else if (str.equals("1")) {
                 Laptop lt1 = new Laptop(); //Создаём пустой экземпляр
-                lt1.addLaptop(); //Заполняем созданный экземпляр значениями с помощью метода addLaptop()
+                lt1.addPC(); //Заполняем созданный экземпляр значениями с помощью метода addPC()
                 laptopHashSet.add(lt1); // Закидываем текущий экземпляр в HashSet
             } else if (str.equals("2")) PrintAll(laptopHashSet);
             else if (str.equals("3")) PrintFiltered(laptopHashSet);
@@ -28,7 +28,7 @@ public class Main {
 
     private static void PrintAll(HashSet<Laptop> laptopset) {
         System.out.println("Все ноутбуки:");
-        for (Laptop lt : laptopset) lt.printLaptop();
+        for (Laptop lt : laptopset) lt.print();
     }
 
     private static void PrintFiltered(HashSet<Laptop> laptopSet) {
@@ -95,35 +95,35 @@ public class Main {
                 TreeSet<Laptop> laptopForBrand = new TreeSet(brandComp);
                 for (Laptop lt : laptopSet) laptopForBrand.add(lt);
                 System.out.println("Сортировка по названию: \n");
-                for (Laptop lt : laptopForBrand) lt.printLaptop();
+                for (Laptop lt : laptopForBrand) lt.print();
             }
             else if (str.equals("2")) { //Сортировка по ОЗУ
                 Comparator<Laptop> ramComp = new RamComparator();
                 TreeSet<Laptop> laptopForRam = new TreeSet(ramComp);
                 for (Laptop lt : laptopSet) laptopForRam.add(lt);
                 System.out.println("Сортировка по RAM: \n");
-                for (Laptop lt : laptopForRam) lt.printLaptop();
+                for (Laptop lt : laptopForRam) lt.print();
             }
             else if (str.equals("3")) { //Сортировка по HDD
                 Comparator<Laptop> hddComp = new HDDComparator();
                 TreeSet<Laptop> laptopForHdd = new TreeSet(hddComp);
                 for (Laptop lt : laptopSet) laptopForHdd.add(lt);
                 System.out.println("Сортировка по HDD: \n");
-                for (Laptop lt : laptopForHdd) lt.printLaptop();
+                for (Laptop lt : laptopForHdd) lt.print();
             }
             else if (str.equals("4")) { //Сортировка по Screen
                 Comparator<Laptop> screenComp = new ScreenComparator();
                 TreeSet<Laptop> laptopForScreen = new TreeSet(screenComp);
                 for (Laptop lt : laptopSet) laptopForScreen.add(lt);
                 System.out.println("Сортировка по названию: \n");
-                for (Laptop lt : laptopForScreen) lt.printLaptop();
+                for (Laptop lt : laptopForScreen) lt.print();
             }
             else if (str.equals("5")) { //Сортировка по Price
                 Comparator<Laptop> priceComp = new PriceComparator();
                 TreeSet<Laptop> laptopForPrice = new TreeSet(priceComp);
                 for (Laptop lt : laptopSet) laptopForPrice.add(lt); // Перекидываем все экземпляры из HashSet в TreeSet
                 System.out.println("Сортировка по цене: \n");
-                for (Laptop lt : laptopForPrice) lt.printLaptop();
+                for (Laptop lt : laptopForPrice) lt.print();
             }
             else System.out.println("Неизвестная команда. Повторите ввод. \n");
         }
