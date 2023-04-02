@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6510f6b0-a8ad-43c9-b960-2cf3ac0ff87b" name="Changes" comment="Начала работать сортировка.">
+    <list default="true" id="6510f6b0-a8ad-43c9-b960-2cf3ac0ff87b" name="Changes" comment="Базовый вариант готов. Хотя, конечно, есть пара моментов и идей для оптимизации. :)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BrandComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HddComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PriceComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/RamComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ScreenComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677525363364</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Базовый вариант готов. Хотя, конечно, есть пара моментов и идей для оптимизации. :)">
+      <created>1677529412627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677529412627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +123,7 @@
     <MESSAGE value="Организовал структуру, задействовал конструктор." />
     <MESSAGE value="Всё сначала..." />
     <MESSAGE value="Начала работать сортировка." />
-    <option name="LAST_COMMIT_MESSAGE" value="Начала работать сортировка." />
+    <MESSAGE value="Базовый вариант готов. Хотя, конечно, есть пара моментов и идей для оптимизации. :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Базовый вариант готов. Хотя, конечно, есть пара моментов и идей для оптимизации. :)" />
   </component>
 </project>

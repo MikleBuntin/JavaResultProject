@@ -7,15 +7,17 @@ import static java.lang.Double.parseDouble;
 import static java.lang.Integer.parseInt;
 
 class Laptop implements Comparable<Laptop> {
-    Integer sn;
+
+
+    private Integer sn;
     private String brand;
 
     private double ram;
     private double hdd;
     private double screen; //диагональ экрана
-    Double price;
+    private Double price;
 
-
+    public Integer getSn() {return sn;}
     public String getBrand() {return brand;}
     public Double getPrice() {return price;}
     public Double getHDD() {return hdd;}
@@ -61,44 +63,6 @@ class Laptop implements Comparable<Laptop> {
     }
 }
 
-class BrandComparator implements Comparator<Laptop> {
-
-    @Override
-    public int compare(Laptop o1, Laptop o2) {
-        return o1.getBrand().compareTo(o2.getBrand());
-    }
-}
-class PriceComparator implements Comparator<Laptop> {
-
-    @Override
-    public int compare(Laptop o1, Laptop o2) {
-        return o1.getPrice().compareTo(o2.getPrice());
-    }
-}
-
-class HDDComparator implements Comparator<Laptop> {
-
-    @Override
-    public int compare(Laptop o1, Laptop o2) {
-        return o1.getHDD().compareTo(o2.getHDD());
-    }
-
-}
-class RamComparator implements Comparator<Laptop> {
-
-    @Override
-    public int compare(Laptop o1, Laptop o2) {
-        return o1.getRam().compareTo(o2.getRam());
-    }
-}
-
-class ScreenComparator implements Comparator<Laptop> {
-
-    @Override
-    public int compare(Laptop o1, Laptop o2) {
-        return o1.getScreen().compareTo(o2.getScreen());
-    }
-}
 
 
 
